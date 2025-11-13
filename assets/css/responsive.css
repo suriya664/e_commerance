@@ -1,0 +1,364 @@
+/* The Gild Store – Responsive Adjustments */
+
+@media (max-width: 1320px) {
+  .rm-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rm-hero-text {
+    order: 2;
+  }
+
+  .rm-hero-media {
+    order: 1;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rm-grid-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .rm-widget-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-footer-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .rm-section {
+    padding: 80px 0;
+  }
+
+  .rm-nav-links {
+    position: fixed;
+    inset: 0 0 auto;
+    background: rgba(249, 247, 243, 0.98);
+    flex-direction: column;
+    padding: 120px 32px 40px;
+    gap: 22px;
+    transform: translateY(-110%);
+    transition: transform 0.4s ease;
+  }
+
+  .rm-nav-links.active {
+    transform: translateY(0);
+  }
+
+  .rm-mobile-toggle {
+    display: inline-flex;
+  }
+
+  .rm-nav-controls {
+    gap: 12px;
+  }
+
+  .rm-grid-3,
+  .rm-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-pricing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-article {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 280px;
+    transform: translateX(-100%);
+    z-index: 2000;
+    transition: transform 0.4s ease;
+  }
+
+  .rm-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .rm-dashboard-content {
+    padding: 32px 24px 60px;
+  }
+
+  .rm-footer-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rm-section {
+    padding: 60px 0;
+  }
+
+  .rm-grid-3,
+  .rm-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-widget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-countdown {
+    flex-direction: column;
+  }
+
+  .rm-hero-badges {
+    flex-direction: column;
+  }
+
+  .rm-404-content {
+    padding: 60px 32px;
+  }
+
+  .rm-coming-card {
+    padding: 48px 32px;
+  }
+
+  .rm-footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .rm-section {
+    padding: 40px 0;
+  }
+
+  .rm-nav {
+    padding: 16px 0;
+  }
+
+  .rm-pill-button {
+    padding: 12px 26px;
+  }
+
+  .rm-hero-title {
+    font-size: 2.4rem;
+  }
+
+  .rm-widget-card,
+  .rm-dashboard-card {
+    padding: 20px;
+  }
+
+  .rm-table {
+    min-width: 580px;
+  }
+
+  .rm-footer-nav {
+    flex-direction: column;
+  }
+
+  .rm-countdown div {
+    min-width: auto;
+  }
+}
+/* The Gild Store – Responsive Adjustments */
+
+@media (max-width: 1320px) {
+  .rm-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rm-hero-text {
+    order: 2;
+  }
+
+  .rm-hero-media {
+    order: 1;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rm-grid-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .rm-widget-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .rm-section {
+    padding: 80px 0;
+  }
+
+  .rm-nav-links {
+    position: fixed;
+    inset: 0 0 auto 0;
+    background: rgba(249, 247, 243, 0.98);
+    flex-direction: column;
+    padding: 120px 32px 40px;
+    gap: 22px;
+    transform: translateY(-110%);
+    transition: transform 0.4s ease;
+  }
+
+  .rm-nav-links.active {
+    transform: translateY(0);
+  }
+
+  .rm-mobile-toggle {
+    display: inline-flex;
+  }
+
+  .rm-nav-controls {
+    gap: 12px;
+  }
+
+  .rm-grid-3,
+  .rm-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-pricing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rm-article {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 280px;
+    transform: translateX(-100%);
+    z-index: 2000;
+    transition: transform 0.4s ease;
+  }
+
+  .rm-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .rm-dashboard-content {
+    padding: 32px 24px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rm-section {
+    padding: 60px 0;
+  }
+
+  .rm-grid-3,
+  .rm-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-widget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rm-countdown {
+    flex-direction: column;
+  }
+
+  .rm-hero-badges {
+    flex-direction: column;
+  }
+
+  .rm-404-content {
+    padding: 60px 32px;
+  }
+
+  .rm-coming-card {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rm-section {
+    padding: 40px 0;
+  }
+
+  .rm-nav {
+    padding: 16px 0;
+  }
+
+  .rm-pill-button {
+    padding: 12px 26px;
+  }
+
+  .rm-hero-title {
+    font-size: 2.4rem;
+  }
+
+  .rm-widget-card,
+  .rm-dashboard-card {
+    padding: 20px;
+  }
+
+  .rm-table {
+    min-width: 580px;
+  }
+
+  .rm-footer-nav {
+    flex-direction: column;
+  }
+
+  .rm-footer-social {
+    gap: 12px;
+  }
+}
+
+

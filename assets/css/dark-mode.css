@@ -1,0 +1,252 @@
+/* The Gild Store – Dark Mode Overrides */
+
+body.rm-dark {
+  background: #060606;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.rm-dark .rm-header {
+  background: rgba(6, 6, 6, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.rm-dark .rm-logo {
+  color: var(--rm-pearl);
+}
+
+body.rm-dark .rm-nav-links a::after {
+  background: var(--rm-gold);
+}
+
+body.rm-dark .rm-pill-button {
+  background: linear-gradient(135deg, rgba(203, 161, 53, 0.85), rgba(203, 161, 53, 0.55));
+}
+
+body.rm-dark .rm-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.rm-dark .rm-hero {
+  background: radial-gradient(circle at top left, rgba(203, 161, 53, 0.18), rgba(6, 6, 6, 1));
+}
+
+body.rm-dark .rm-hero::after,
+body.rm-dark .rm-coming-soon::before,
+body.rm-dark .rm-404-dust {
+  opacity: 0.22;
+}
+
+body.rm-dark .rm-hero-badge,
+body.rm-dark .rm-card,
+body.rm-dark .rm-timeline-card,
+body.rm-dark .rm-product-card,
+body.rm-dark .rm-testimonial,
+body.rm-dark .rm-blog-card,
+body.rm-dark .rm-article-card,
+body.rm-dark .rm-pricing-card,
+body.rm-dark .rm-coming-card,
+body.rm-dark .rm-404-content,
+body.rm-dark .rm-auth-card,
+body.rm-dark .rm-dashboard-card,
+body.rm-dark .rm-widget-card,
+body.rm-dark .rm-table-wrapper {
+  background: rgba(18, 18, 18, 0.92);
+  color: rgba(255, 255, 255, 0.86);
+  border-color: rgba(203, 161, 53, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+body.rm-dark .rm-card:hover,
+body.rm-dark .rm-product-card:hover,
+body.rm-dark .rm-timeline-card:hover,
+body.rm-dark .rm-pricing-card.popular,
+body.rm-dark .rm-dashboard-card:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+}
+
+body.rm-dark .rm-product-card img,
+body.rm-dark .rm-blog-card img {
+  filter: brightness(0.92);
+}
+
+body.rm-dark .rm-divider {
+  background: linear-gradient(90deg, transparent, rgba(203, 161, 53, 0.75), transparent);
+}
+
+body.rm-dark .rm-section-subtitle,
+body.rm-dark .rm-product-meta span,
+body.rm-dark .rm-muted {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body.rm-dark .rm-input,
+body.rm-dark .rm-textarea,
+body.rm-dark .rm-select {
+  background: rgba(18, 18, 18, 0.92);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body.rm-dark .rm-input:focus,
+body.rm-dark .rm-textarea:focus,
+body.rm-dark .rm-select:focus {
+  border-color: rgba(203, 161, 53, 0.7);
+  box-shadow: 0 0 0 4px rgba(203, 161, 53, 0.22);
+}
+
+body.rm-dark .rm-table thead {
+  background: rgba(203, 161, 53, 0.18);
+}
+
+body.rm-dark .rm-table th,
+body.rm-dark .rm-table td {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.rm-dark .rm-footer {
+  background: linear-gradient(135deg, rgba(12, 12, 12, 0.92), rgba(203, 161, 53, 0.85));
+}
+
+body.rm-dark .rm-sidebar {
+  background: linear-gradient(180deg, rgba(12, 12, 12, 0.95), rgba(203, 161, 53, 0.18));
+}
+
+body.rm-dark .rm-sidebar-nav a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body.rm-dark .rm-sidebar-nav a.active,
+body.rm-dark .rm-sidebar-nav a:hover {
+  background: rgba(203, 161, 53, 0.28);
+}
+/* The Gild Store – Dark Mode Overrides */
+
+body.rm-dark {
+  background: #060606;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.rm-dark .rm-header {
+  background: rgba(6, 6, 6, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.rm-dark .rm-logo {
+  color: var(--rm-pearl);
+}
+
+body.rm-dark .rm-nav-links a::after {
+  background: var(--rm-gold);
+}
+
+body.rm-dark .rm-pill-button {
+  background: linear-gradient(135deg, rgba(203, 161, 53, 0.85), rgba(203, 161, 53, 0.55));
+}
+
+body.rm-dark .rm-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.rm-dark .rm-hero {
+  background: radial-gradient(circle at top left, rgba(203, 161, 53, 0.18), rgba(6, 6, 6, 1));
+}
+
+body.rm-dark .rm-hero::after,
+body.rm-dark .rm-coming-soon::before,
+body.rm-dark .rm-404-dust {
+  opacity: 0.22;
+}
+
+body.rm-dark .rm-hero-badge,
+body.rm-dark .rm-card,
+body.rm-dark .rm-timeline-card,
+body.rm-dark .rm-product-card,
+body.rm-dark .rm-testimonial,
+body.rm-dark .rm-blog-card,
+body.rm-dark .rm-article-card,
+body.rm-dark .rm-pricing-card,
+body.rm-dark .rm-coming-card,
+body.rm-dark .rm-404-content,
+body.rm-dark .rm-auth-card,
+body.rm-dark .rm-dashboard-card,
+body.rm-dark .rm-widget-card {
+  background: rgba(18, 18, 18, 0.92);
+  color: rgba(255, 255, 255, 0.86);
+  border-color: rgba(203, 161, 53, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+body.rm-dark .rm-card:hover,
+body.rm-dark .rm-product-card:hover,
+body.rm-dark .rm-timeline-card:hover,
+body.rm-dark .rm-pricing-card.popular,
+body.rm-dark .rm-dashboard-card:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+}
+
+body.rm-dark .rm-product-card img,
+body.rm-dark .rm-blog-card img {
+  filter: brightness(0.92);
+}
+
+body.rm-dark .rm-divider {
+  background: linear-gradient(90deg, transparent, rgba(203, 161, 53, 0.75), transparent);
+}
+
+body.rm-dark .rm-section-subtitle,
+body.rm-dark .rm-product-meta span,
+body.rm-dark .rm-muted {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body.rm-dark .rm-input,
+body.rm-dark .rm-textarea,
+body.rm-dark .rm-select {
+  background: rgba(18, 18, 18, 0.92);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body.rm-dark .rm-input:focus,
+body.rm-dark .rm-textarea:focus,
+body.rm-dark .rm-select:focus {
+  border-color: rgba(203, 161, 53, 0.7);
+  box-shadow: 0 0 0 4px rgba(203, 161, 53, 0.22);
+}
+
+body.rm-dark .rm-table-wrapper {
+  background: rgba(18, 18, 18, 0.9);
+  border-color: rgba(203, 161, 53, 0.28);
+}
+
+body.rm-dark .rm-table thead {
+  background: rgba(203, 161, 53, 0.18);
+}
+
+body.rm-dark .rm-table th,
+body.rm-dark .rm-table td {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.rm-dark .rm-footer {
+  background: linear-gradient(135deg, rgba(12, 12, 12, 0.92), rgba(203, 161, 53, 0.85));
+}
+
+body.rm-dark .rm-sidebar {
+  background: linear-gradient(180deg, rgba(12, 12, 12, 0.95), rgba(203, 161, 53, 0.18));
+}
+
+body.rm-dark .rm-sidebar-nav a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body.rm-dark .rm-sidebar-nav a.active,
+body.rm-dark .rm-sidebar-nav a:hover {
+  background: rgba(203, 161, 53, 0.28);
+}
+
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Dashboard – The Gild Store</title>
+    <meta
+      name="description"
+      content="The Gild Store admin dashboard featuring analytics widgets, charts, and executive insights."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  </head>
+  <body>
+    <div class="rm-dashboard">
+      <aside class="rm-sidebar">
+        <div class="rm-sidebar-brand">The Gild Store</div>
+        <nav class="rm-sidebar-nav">
+          <a href="index.html" class="active"><i class="ri-dashboard-line"></i> Overview</a>
+          <a href="products.html"><i class="ri-inbox-line"></i> Products</a>
+          <a href="orders.html"><i class="ri-bill-line"></i> Orders</a>
+          <a href="users.html"><i class="ri-team-line"></i> Users</a>
+          <a href="messages.html"><i class="ri-chat-3-line"></i> Messages</a>
+          <a href="reports.html"><i class="ri-line-chart-line"></i> Reports</a>
+          <a href="settings.html"><i class="ri-settings-5-line"></i> Settings</a>
+        </nav>
+      </aside>
+      <main class="rm-dashboard-content">
+        <div class="rm-dashboard-header">
+          <div>
+            <h1 style="font-family: var(--rm-font-serif); text-transform: uppercase;">Executive Overview</h1>
+            <p class="rm-muted">Real-time insights across revenue, loyalty, and patron sentiment.</p>
+          </div>
+          <div class="rm-flex">
+            <button class="rm-toggle-btn" data-toggle="theme" aria-label="Toggle theme">
+              <i class="ri-moon-clear-line"></i>
+            </button>
+            <button class="rm-toggle-btn" data-toggle="direction" aria-label="Toggle RTL">
+              <i class="ri-text-direction-l"></i>
+            </button>
+            <button class="rm-toggle-btn" data-toggle="sidebar" aria-label="Toggle sidebar">
+              <i class="ri-menu-fold-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <section class="rm-widget-grid">
+          <div class="rm-widget-card" data-aos="fade-up">
+            <span class="rm-muted">Revenue (30d)</span>
+            <div class="rm-widget-value">₹4.82Cr</div>
+            <span class="rm-status success"><i class="ri-arrow-up-right-line"></i> +18%</span>
+          </div>
+          <div class="rm-widget-card" data-aos="fade-up" data-aos-delay="120">
+            <span class="rm-muted">Average Order Value</span>
+            <div class="rm-widget-value">₹2,94,000</div>
+            <span class="rm-status pending"><i class="ri-pulse-line"></i> Stable</span>
+          </div>
+          <div class="rm-widget-card" data-aos="fade-up" data-aos-delay="180">
+            <span class="rm-muted">VIP Retention</span>
+            <div class="rm-widget-value">92%</div>
+            <span class="rm-status success"><i class="ri-arrow-up-double-line"></i> +4.6%</span>
+          </div>
+          <div class="rm-widget-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="rm-muted">New Patrons</span>
+            <div class="rm-widget-value">58</div>
+            <span class="rm-status pending"><i class="ri-time-line"></i> Review</span>
+          </div>
+        </section>
+
+        <section class="rm-chart-grid">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <div class="rm-flex-between">
+              <h3>Revenue & Orders</h3>
+              <a href="reports.html" class="rm-muted">Expand</a>
+            </div>
+            <canvas id="ordersChart" height="140"></canvas>
+          </div>
+          <div class="rm-dashboard-card" data-aos="fade-up" data-aos-delay="180">
+            <h3>Customer Segments</h3>
+            <canvas id="segmentsChart" height="240"></canvas>
+          </div>
+        </section>
+
+        <section class="rm-dashboard-card rm-dashboard-table" data-aos="fade-up">
+          <div class="rm-flex-between">
+            <h3>Recent Orders</h3>
+            <a href="orders.html" class="rm-muted">View all</a>
+          </div>
+          <div class="rm-table-wrapper" style="margin-top: 18px;">
+            <table class="rm-table">
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Client</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#TG-1042</td>
+                  <td>Malhotra Couture</td>
+                  <td><span class="rm-status success">Completed</span></td>
+                  <td>₹14,80,000</td>
+                  <td>12 Nov 2025</td>
+                </tr>
+                <tr>
+                  <td>#TG-1039</td>
+                  <td>Mehta Jewels</td>
+                  <td><span class="rm-status pending">In Transit</span></td>
+                  <td>₹9,62,000</td>
+                  <td>11 Nov 2025</td>
+                </tr>
+                <tr>
+                  <td>#TG-1035</td>
+                  <td>Aarya Galleries</td>
+                  <td><span class="rm-status success">Completed</span></td>
+                  <td>₹21,60,640</td>
+                  <td>09 Nov 2025</td>
+                </tr>
+                <tr>
+                  <td>#TG-1027</td>
+                  <td>Navrang Boutique</td>
+                  <td><span class="rm-status warning">Attention</span></td>
+                  <td>₹7,24,000</td>
+                  <td>08 Nov 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="rm-grid rm-grid-2" style="margin-top: 40px;">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <h3>VIP Highlights</h3>
+            <ul class="rm-pricing-features">
+              <li>Private salon attendance up 32%</li>
+              <li>Top region: Maharashtra (38% of spend)</li>
+              <li>Most requested item: Nizam Heirloom Set</li>
+              <li>Average concierge response: 42 min</li>
+            </ul>
+          </div>
+          <div class="rm-dashboard-card" data-aos="fade-up" data-aos-delay="180">
+            <h3>Messages</h3>
+            <div class="rm-list">
+              <div class="rm-list-item">
+                <img
+                  src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=120&q=80"
+                  alt="Client"
+                  class="rm-avatar"
+                />
+                <div>
+                  <strong>Rhea Malhotra</strong>
+                  <p class="rm-muted">Requesting preview of AW capsule before the Delhi press launch.</p>
+                </div>
+              </div>
+              <div class="rm-list-item">
+                <img
+                  src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=120&q=80"
+                  alt="Client"
+                  class="rm-avatar"
+                />
+                <div>
+                  <strong>Arjun Kapoor</strong>
+                  <p class="rm-muted">Confirming delivery for a Mumbai collector viewing.</p>
+                </div>
+              </div>
+            </div>
+            <a href="messages.html" class="rm-pill-button" style="margin-top: 16px; display: inline-block;">View Inbox</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+  </body>
+</html>
+
+

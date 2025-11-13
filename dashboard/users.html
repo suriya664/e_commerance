@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Users – The Gild Store Dashboard</title>
+    <meta name="description" content="Manage user roles, VIP levels, and access controls for The Gild Store." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  </head>
+  <body>
+    <div class="rm-dashboard">
+      <aside class="rm-sidebar">
+        <div class="rm-sidebar-brand">The Gild Store</div>
+        <nav class="rm-sidebar-nav">
+          <a href="index.html"><i class="ri-dashboard-line"></i> Overview</a>
+          <a href="products.html"><i class="ri-inbox-line"></i> Products</a>
+          <a href="orders.html"><i class="ri-bill-line"></i> Orders</a>
+          <a href="users.html" class="active"><i class="ri-team-line"></i> Users</a>
+          <a href="messages.html"><i class="ri-chat-3-line"></i> Messages</a>
+          <a href="reports.html"><i class="ri-line-chart-line"></i> Reports</a>
+          <a href="settings.html"><i class="ri-settings-5-line"></i> Settings</a>
+        </nav>
+      </aside>
+      <main class="rm-dashboard-content">
+        <div class="rm-dashboard-header">
+          <div>
+            <h1 style="font-family: var(--rm-font-serif); text-transform: uppercase;">User Directory</h1>
+            <p class="rm-muted">Oversee patrons, team members, and permission levels.</p>
+          </div>
+          <div class="rm-flex">
+            <button class="rm-pill-button" type="button"><i class="ri-add-line" style="margin-right: 6px;"></i>Invite User</button>
+            <button class="rm-toggle-btn" data-toggle="sidebar" aria-label="Toggle sidebar">
+              <i class="ri-menu-fold-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="rm-dashboard-card" data-aos="fade-up">
+          <form class="rm-form">
+            <div class="rm-form-row">
+              <input class="rm-input" type="search" placeholder="Search by name or email" />
+              <select class="rm-select">
+                <option>Role</option>
+                <option>Executive</option>
+                <option>Strategist</option>
+                <option>Concierge</option>
+                <option>Client</option>
+              </select>
+              <select class="rm-select">
+                <option>Segment</option>
+                <option>VIP</option>
+                <option>Gold</option>
+                <option>Standard</option>
+              </select>
+              <button class="rm-pill-button" type="submit">Filter</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="rm-table-wrapper" data-aos="fade-up" style="margin-top: 32px;">
+          <table class="rm-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Segment</th>
+                <th>Status</th>
+                <th>Last Active</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Serena Callas</td>
+                <td>serena@royalminimalism.com</td>
+                <td>Executive</td>
+                <td>Internal</td>
+                <td><span class="rm-status success">Active</span></td>
+                <td>12 Nov 2025</td>
+              </tr>
+              <tr>
+                <td>Rami Al-Farouq</td>
+                <td>rami@saffronjewels.com</td>
+                <td>Client</td>
+                <td>VIP</td>
+                <td><span class="rm-status success">Active</span></td>
+                <td>11 Nov 2025</td>
+              </tr>
+              <tr>
+                <td>Elena Navarro</td>
+                <td>elena@navarrogalleries.com</td>
+                <td>Client</td>
+                <td>VIP</td>
+                <td><span class="rm-status pending">Invite Sent</span></td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Hassan Kareem</td>
+                <td>hassan@kareemjewels.com</td>
+                <td>Client</td>
+                <td>Gold</td>
+                <td><span class="rm-status success">Active</span></td>
+                <td>10 Nov 2025</td>
+              </tr>
+              <tr>
+                <td>Ines Moritz</td>
+                <td>ines@royalminimalism.com</td>
+                <td>Strategist</td>
+                <td>Internal</td>
+                <td><span class="rm-status success">Active</span></td>
+                <td>08 Nov 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section class="rm-grid rm-grid-2" style="margin-top: 40px;">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <h3>Role Definitions</h3>
+            <ul class="rm-pricing-features">
+              <li>Executive – Full access to analytics, billing, and settings.</li>
+              <li>Strategist – Manage products, campaigns, and reports.</li>
+              <li>Concierge – Handle orders, messages, and VIP logistics.</li>
+              <li>Client – View personalized dashboards and exclusive content.</li>
+            </ul>
+          </div>
+          <div class="rm-dashboard-card" data-aos="fade-up" data-aos-delay="160">
+            <h3>Actions</h3>
+            <div class="rm-list">
+              <div class="rm-list-item">
+                <div>
+                  <strong>Update VIP Cohorts</strong>
+                  <p class="rm-muted">Review segments before winter campaign.</p>
+                </div>
+                <button class="rm-toggle-btn" aria-label="Edit"><i class="ri-edit-line"></i></button>
+              </div>
+              <div class="rm-list-item">
+                <div>
+                  <strong>Security Review</strong>
+                  <p class="rm-muted">Confirm MFA enforcement for new executives.</p>
+                </div>
+                <button class="rm-toggle-btn" aria-label="Approve"><i class="ri-check-line"></i></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+  </body>
+</html>
+
+

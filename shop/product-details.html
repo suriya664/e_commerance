@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Product Details – The Gild Store</title>
+    <meta
+      name="description"
+      content="Discover detailed specifications, gallery, and concierge options for The Gild Store luxury products."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <style>
+      .rm-product-display {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        gap: 48px;
+      }
+
+      .rm-product-gallery {
+        display: grid;
+        gap: 16px;
+      }
+
+      .rm-product-gallery-main {
+        position: relative;
+        border-radius: var(--rm-radius);
+        overflow: hidden;
+        border: 1px solid rgba(203, 161, 53, 0.3);
+      }
+
+      .rm-product-gallery-main img {
+        width: 100%;
+        height: 580px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .rm-product-gallery-main:hover img {
+        transform: scale(1.05);
+      }
+
+      .rm-product-thumbs {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .rm-product-thumb {
+        border-radius: 16px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: border 0.3s ease, transform 0.3s ease;
+      }
+
+      .rm-product-thumb.active {
+        border-color: rgba(203, 161, 53, 0.6);
+        transform: translateY(-4px);
+      }
+
+      .rm-product-thumb img {
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .rm-spec-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .rm-spec-item {
+        padding: 18px;
+        border-radius: 16px;
+        border: 1px solid rgba(203, 161, 53, 0.2);
+        background: rgba(255, 255, 255, 0.92);
+      }
+
+      body.rm-dark .rm-product-gallery-main img {
+        filter: brightness(0.95);
+      }
+
+      @media (max-width: 992px) {
+        .rm-product-display {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="rm-header">
+      <div class="rm-container">
+        <nav class="rm-nav">
+          <a class="rm-logo" href="../index.html">The Gild Store</a>
+          <button class="rm-mobile-toggle" aria-label="Toggle navigation">
+            <i class="ri-menu-line"></i>
+          </button>
+          <div class="rm-nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../home-boutique.html">Boutique</a>
+            <a href="../about.html">About</a>
+            <a href="../services/index.html">Services</a>
+            <a href="index.html" class="active">Store</a>
+            <a href="../blog/index.html">Journal</a>
+            <a href="../pricing.html">Pricing</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+          <div class="rm-nav-controls">
+            <button class="rm-toggle-btn" data-toggle="theme" aria-label="Toggle dark mode">
+              <i class="ri-moon-clear-line"></i>
+            </button>
+            <button class="rm-toggle-btn" data-toggle="direction" aria-label="Toggle RTL">
+              <i class="ri-text-direction-l"></i>
+            </button>
+            <a class="rm-pill-button" href="cart.html"><i class="ri-shopping-bag-3-line" style="margin-right: 6px;"></i>Cart</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="rm-section" style="padding-top: 150px;">
+        <div class="rm-container">
+          <div class="rm-breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Store</a> / <span>Imperial Aurora Set</span></div>
+          <div class="rm-product-display">
+            <div class="rm-product-gallery" data-aos="fade-right">
+              <div class="rm-product-gallery-main">
+                <img
+                  id="rmProductMain"
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80"
+                  alt="Imperial Aurora Set Main"
+                />
+              </div>
+              <div class="rm-product-thumbs">
+                <div class="rm-product-thumb active" data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=320&q=80"
+                    alt="Imperial Aurora detail"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="rm-product-thumb" data-image="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1200&q=80">
+                  <img
+                    src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=320&q=80"
+                    alt="Jewelry closeup"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="rm-product-thumb" data-image="https://images.unsplash.com/photo-1529158062015-cad636e69505?auto=format&fit=crop&w=1200&q=80">
+                  <img
+                    src="https://images.unsplash.com/photo-1529158062015-cad636e69505?auto=format&fit=crop&w=320&q=80"
+                    alt="Collector showcase"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="rm-product-thumb" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80">
+                  <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=320&q=80"
+                    alt="Lifestyle model"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left">
+              <span class="rm-chip">Collector Capsule</span>
+              <h1 style="font-family: var(--rm-font-serif); text-transform: uppercase; margin: 16px 0;">Nizam Heirloom Set</h1>
+              <p>
+                Inspired by the gilded courts of Hyderabad, each piece brings together Polki diamonds, emerald cabochons,
+                and hand-chased floral jaali work. Includes blockchain provenance, lifetime polishing, and all-India insured
+                logistics—an ode to regal craftsmanship.
+              </p>
+              <div class="rm-flex" style="margin: 24px 0;">
+                <span class="rm-price" style="margin: 0;">₹14,80,000 <span>INR</span></span>
+                <a class="rm-pill-button" href="cart.html">Add to Vault</a>
+              </div>
+              <div class="rm-spec-grid">
+                <div class="rm-spec-item">
+                  <strong>Materials</strong>
+                  <p>22K Gold, Polki Diamonds, Emeralds, Enamel detailing</p>
+                </div>
+                <div class="rm-spec-item">
+                  <strong>Dimensions</strong>
+                  <p>Necklace 45cm, Earrings 6cm drop, Bracelet 18cm</p>
+                </div>
+                <div class="rm-spec-item">
+                  <strong>Edition</strong>
+                  <p>Limited to 50 sets pan-India • Numbered & signed for authenticity</p>
+                </div>
+                <div class="rm-spec-item">
+                  <strong>Availability</strong>
+                  <p>Includes virtual styling in English/Hindi/Telugu and curated private showings</p>
+                </div>
+              </div>
+
+              <div class="rm-dashboard-card" style="margin-top: 32px;">
+                <h3>Concierge Add-ons</h3>
+                <ul class="rm-pricing-features">
+                  <li>Complimentary teak travel case with personalised monogram</li>
+                  <li>Priority invitations to The Gild Store salons and previews</li>
+                  <li>Annual gem certification and insurance renewal management</li>
+                </ul>
+                <a class="rm-pill-button" href="../contact.html">Reserve Private Viewing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rm-section" style="padding-bottom: 120px;">
+        <div class="rm-container">
+          <h2 class="rm-section-title" data-aos="fade-up">Collector Reviews</h2>
+          <div class="rm-grid rm-grid-2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px;">
+            <div class="rm-testimonial" data-aos="fade-up">
+              <p>
+                “The set arrives in a sandalwood-infused vault. The shimmer mirrors the chandeliers of Falaknuma — exquisite
+                craftsmanship and presentation.”</p>
+              <cite>Maharani Aishwarya Devi, Art Patron – Hyderabad</cite>
+            </div>
+            <div class="rm-testimonial" data-aos="fade-up" data-aos-delay="160">
+              <p>
+                “The private viewing felt cinematic. The provenance ledger added invaluable trust and future resale
+                confidence for our collectors.”</p>
+              <cite>Pranav Sethi, Collector – Mumbai</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rm-footer">
+      <div class="rm-container">
+        <div class="rm-footer-content">
+          <div class="rm-footer-brand">
+            <h3>The Gild Store</h3>
+            <p>
+              Crafting digital experiences with Indian finesse for heritage houses, avant-garde designers, and luxury hospitality leaders across the nation. Where timeless aesthetics meet enterprise technology.
+            </p>
+            <div class="rm-footer-social">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+
+          <div class="rm-footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../services/index.html">Services</a></li>
+              <li><a href="index.html">Store</a></li>
+              <li><a href="../blog/index.html">Journal</a></li>
+              <li><a href="../pricing.html">Pricing</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="rm-footer-links">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="../privacy.html">Privacy Policy</a></li>
+              <li><a href="../terms.html">Terms of Service</a></li>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="rm-footer-contact">
+            <h4>Get In Touch</h4>
+            <p><i class="ri-map-pin-line"></i><span>123, Anna Salai, Mount Road<br />Chennai, Tamil Nadu 600002</span></p>
+            <p><i class="ri-phone-line"></i><span>+91 44 1234 5678</span></p>
+            <p><i class="ri-mail-line"></i><span>hello@thegildstore.com</span></p>
+            <p><i class="ri-time-line"></i><span>Mon - Sat: 10:00 AM - 7:00 PM</span></p>
+          </div>
+        </div>
+
+        <div class="rm-footer-bottom">
+          <p>&copy; 2025 The Gild Store. All rights reserved. Excellence by Design.</p>
+          <div class="rm-footer-nav">
+            <a href="../privacy.html">Privacy</a>
+            <a href="../terms.html">Terms</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="rm-toggle-btn rm-back-top" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      $(function () {
+        $(".rm-product-thumb").on("click", function () {
+          const image = $(this).data("image");
+          $("#rmProductMain").attr("src", image);
+          $(".rm-product-thumb").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

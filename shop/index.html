@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>The Gild Store Storefront</title>
+    <meta
+      name="description"
+      content="Browse the The Gild Store e-commerce storefront with filterable collections and immersive product galleries."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  </head>
+  <body>
+    <header class="rm-header">
+      <div class="rm-container">
+        <nav class="rm-nav">
+          <a class="rm-logo" href="../index.html">The Gild Store</a>
+          <button class="rm-mobile-toggle" aria-label="Toggle navigation">
+            <i class="ri-menu-line"></i>
+          </button>
+          <div class="rm-nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../home-boutique.html">Boutique</a>
+            <a href="../about.html">About</a>
+            <a href="../services/index.html">Services</a>
+            <a href="index.html" class="active">Store</a>
+            <a href="../blog/index.html">Journal</a>
+            <a href="../pricing.html">Pricing</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+          <div class="rm-nav-controls">
+            <button class="rm-toggle-btn" data-toggle="theme" aria-label="Toggle dark mode">
+              <i class="ri-moon-clear-line"></i>
+            </button>
+            <button class="rm-toggle-btn" data-toggle="direction" aria-label="Toggle RTL">
+              <i class="ri-text-direction-l"></i>
+            </button>
+            <a class="rm-pill-button" href="cart.html"><i class="ri-shopping-bag-3-line" style="margin-right: 6px;"></i>Cart</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="rm-section" style="padding-top: 160px;">
+        <div class="rm-container">
+          <div class="rm-flex-between" data-aos="fade-up">
+            <div>
+              <h1 class="rm-section-title" style="text-align: left;">Immersive Collections</h1>
+              <p class="rm-muted">
+                Each collection features rich imagery, artisan notes, and concierge-ready purchasing pathways crafted for
+                discerning patrons across India.
+              </p>
+            </div>
+            <div class="rm-flex">
+              <button class="rm-toggle-btn active" data-filter="all" aria-label="Show all">
+                <i class="ri-grid-line"></i>
+              </button>
+              <button class="rm-toggle-btn" data-filter="fashion" aria-label="Fashion">
+                <i class="ri-t-shirt-line"></i>
+              </button>
+              <button class="rm-toggle-btn" data-filter="jewelry" aria-label="Jewelry">
+                <i class="ri-diamond-line"></i>
+              </button>
+              <button class="rm-toggle-btn" data-filter="home" aria-label="Home decor">
+                <i class="ri-ancient-pavilion-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="rm-grid rm-grid-3 rm-isotope-grid" style="margin-top: 48px;">
+            <article class="rm-product-card rm-isotope-item" data-category="fashion,limited" data-aos="fade-up">
+              <figure>
+                <span class="rm-product-tag">Limited</span>
+                <img
+                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=960&q=80"
+                  alt="Banaras couture gown"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Banaras Couture Capsule</h3>
+                <p>
+                  Hand-beaded Banarasi silk with celestial zari appliqué. Includes atelier appointment, live stylist chat,
+                  and AR try-on in private salons.
+                </p>
+                <div class="rm-product-meta">
+                  <span>₹3,25,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rm-product-card rm-isotope-item" data-category="jewelry,collector" data-aos="fade-up" data-aos-delay="120">
+              <figure>
+                <span class="rm-product-tag">Collector</span>
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=960&q=80"
+                  alt="Nizam heirloom jewellery"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Nizam Heirloom Jewels</h3>
+                <p>
+                  Polki diamonds, emeralds, and 22K gold crafted in Hyderabad. Certificate of authenticity and blockchain
+                  provenance included for legacy assurance.
+                </p>
+                <div class="rm-product-meta">
+                  <span>₹14,80,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rm-product-card rm-isotope-item" data-category="home,limited" data-aos="fade-up" data-aos-delay="200">
+              <figure>
+                <span class="rm-product-tag">Edition</span>
+                <img
+                  src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=960&q=80"
+                  alt="Luxury home decor"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Palatial Scented Sculptures</h3>
+                <p>
+                  Hand-poured fragrance sculptures evoking royal gardens. Includes refill concierge service and insured
+                  shipping across India.
+                </p>
+                <div class="rm-product-meta">
+                  <span>₹96,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rm-product-card rm-isotope-item" data-category="fashion" data-aos="fade-up">
+              <figure>
+                <span class="rm-product-tag">New</span>
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=960&q=80"
+                  alt="Silk ensemble"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Rajwada Silk Ensemble</h3>
+                <p>
+                  Couture separates woven with luminous Chanderi silk. Includes styling guide, private alterations voucher,
+                  and priority shipping.
+                </p>
+                <div class="rm-product-meta">
+                  <span>₹1,95,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rm-product-card rm-isotope-item" data-category="jewelry" data-aos="fade-up" data-aos-delay="120">
+              <figure>
+                <span class="rm-product-tag">New</span>
+                <img
+                  src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=960&q=80"
+                  alt="Golden bracelet"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Aureate Wrist Cuff</h3>
+                <p>
+                  Triple-layered gold cuff with Jaipuri meenakari detailing. Includes virtual craftsmanship tour and
+                  authenticity documentation.</p>
+                <div class="rm-product-meta">
+                  <span>₹4,10,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rm-product-card rm-isotope-item" data-category="home" data-aos="fade-up" data-aos-delay="200">
+              <figure>
+                <span class="rm-product-tag">Art</span>
+                <img
+                  src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=960&q=80"
+                  alt="Art print"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="rm-product-info">
+                <h3>Gilded Tapestry Collection</h3>
+                <p>
+                  Limited edition tapestry prints inspired by Indian royal courts. Includes installation concierge and
+                  artisan signed certificate.
+                </p>
+                <div class="rm-product-meta">
+                  <span>₹5,25,000</span>
+                  <a href="product-details.html" class="rm-pill-button" style="padding: 10px 24px;">View</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rm-section" style="padding-bottom: 120px;">
+        <div class="rm-container">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <div class="rm-flex-between">
+              <div>
+                <span class="rm-badge">Concierge Services</span>
+                <h2 style="font-family: var(--rm-font-serif); text-transform: uppercase; margin: 16px 0;">
+                  Personal Styling & Private Showings
+                </h2>
+                <p style="max-width: 580px;">
+                  Invite stylists, book private showings, or schedule virtual appointments directly. Our VIP team ensures
+                  packaging, shipping, and gifting align with your patron’s desires and timelines.
+                </p>
+                <div class="rm-flex" style="margin-top: 24px;">
+                  <a class="rm-pill-button" href="../services/details.html">Explore Concierge</a>
+                  <a class="rm-toggle-btn" href="cart.html" aria-label="View cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=820&q=80"
+                  alt="Styling session"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rm-footer">
+      <div class="rm-container">
+        <div class="rm-footer-content">
+          <div class="rm-footer-brand">
+            <h3>The Gild Store</h3>
+            <p>
+              Crafting digital experiences with Indian finesse for heritage houses, avant-garde designers, and luxury hospitality leaders across the nation. Where timeless aesthetics meet enterprise technology.
+            </p>
+            <div class="rm-footer-social">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+
+          <div class="rm-footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../services/index.html">Services</a></li>
+              <li><a href="index.html">Store</a></li>
+              <li><a href="../blog/index.html">Journal</a></li>
+              <li><a href="../pricing.html">Pricing</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="rm-footer-links">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="../privacy.html">Privacy Policy</a></li>
+              <li><a href="../terms.html">Terms of Service</a></li>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="rm-footer-contact">
+            <h4>Get In Touch</h4>
+            <p><i class="ri-map-pin-line"></i><span>123, Anna Salai, Mount Road<br />Chennai, Tamil Nadu 600002</span></p>
+            <p><i class="ri-phone-line"></i><span>+91 44 1234 5678</span></p>
+            <p><i class="ri-mail-line"></i><span>hello@thegildstore.com</span></p>
+            <p><i class="ri-time-line"></i><span>Mon - Sat: 10:00 AM - 7:00 PM</span></p>
+          </div>
+        </div>
+
+        <div class="rm-footer-bottom">
+          <p>&copy; 2025 The Gild Store. All rights reserved. Excellence by Design.</p>
+          <div class="rm-footer-nav">
+            <a href="../privacy.html">Privacy</a>
+            <a href="../terms.html">Terms</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="rm-toggle-btn rm-back-top" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Settings – The Gild Store Dashboard</title>
+    <meta name="description" content="Configure brand preferences, notifications, and integrations for The Gild Store." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  </head>
+  <body>
+    <div class="rm-dashboard">
+      <aside class="rm-sidebar">
+        <div class="rm-sidebar-brand">The Gild Store</div>
+        <nav class="rm-sidebar-nav">
+          <a href="index.html"><i class="ri-dashboard-line"></i> Overview</a>
+          <a href="products.html"><i class="ri-inbox-line"></i> Products</a>
+          <a href="orders.html"><i class="ri-bill-line"></i> Orders</a>
+          <a href="users.html"><i class="ri-team-line"></i> Users</a>
+          <a href="messages.html"><i class="ri-chat-3-line"></i> Messages</a>
+          <a href="reports.html"><i class="ri-line-chart-line"></i> Reports</a>
+          <a href="settings.html" class="active"><i class="ri-settings-5-line"></i> Settings</a>
+        </nav>
+      </aside>
+      <main class="rm-dashboard-content">
+        <div class="rm-dashboard-header">
+          <div>
+            <h1 style="font-family: var(--rm-font-serif); text-transform: uppercase;">Settings</h1>
+            <p class="rm-muted">Manage brand styling, notifications, integrations, and security preferences.</p>
+          </div>
+          <div class="rm-flex">
+            <button class="rm-pill-button" type="button"><i class="ri-save-3-line" style="margin-right: 6px;"></i>Save</button>
+            <button class="rm-toggle-btn" data-toggle="sidebar" aria-label="Toggle sidebar">
+              <i class="ri-menu-fold-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <section class="rm-grid rm-grid-2" style="display: grid; gap: 32px;">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <h3>Brand Preferences</h3>
+            <form class="rm-form" style="margin-top: 18px;">
+              <div class="rm-form-row">
+                <input class="rm-input" type="text" placeholder="Brand Name" value="The Gild Store" />
+                <input class="rm-input" type="text" placeholder="Tagline" value="E-Commerce Store | Excellence by Design." />
+              </div>
+              <textarea class="rm-textarea" placeholder="Footer statement">Yamee Cluster | Excellence by Design.</textarea>
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Enable dark mode toggle for clients</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Enable RTL support</span>
+              </label>
+            </form>
+          </div>
+          <div class="rm-dashboard-card" data-aos="fade-up" data-aos-delay="150">
+            <h3>Notifications</h3>
+            <form class="rm-form" style="margin-top: 18px;">
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Send daily executive summary</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" />
+                <span>Notify on every VIP order</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Send weekly loyalty insights</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" />
+                <span>Notify when inventory below threshold</span>
+              </label>
+            </form>
+          </div>
+        </section>
+
+        <section class="rm-grid rm-grid-2" style="display: grid; gap: 32px; margin-top: 32px;">
+          <div class="rm-dashboard-card" data-aos="fade-up">
+            <h3>Integrations</h3>
+            <div class="rm-list" style="margin-top: 16px;">
+              <div class="rm-list-item">
+                <div>
+                  <strong>Salesforce Commerce</strong>
+                  <p class="rm-muted">Connected • Sync every 30 minutes</p>
+                </div>
+                <button class="rm-toggle-btn" aria-label="Manage"><i class="ri-settings-3-line"></i></button>
+              </div>
+              <div class="rm-list-item">
+                <div>
+                  <strong>Shopify Plus</strong>
+                  <p class="rm-muted">Disconnected</p>
+                </div>
+                <button class="rm-pill-button" type="button" style="padding: 8px 18px;">Connect</button>
+              </div>
+              <div class="rm-list-item">
+                <div>
+                  <strong>Mailchimp Elite</strong>
+                  <p class="rm-muted">Connected • Sync daily</p>
+                </div>
+                <button class="rm-toggle-btn" aria-label="Manage"><i class="ri-settings-3-line"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="rm-dashboard-card" data-aos="fade-up" data-aos-delay="160">
+            <h3>Security</h3>
+            <form class="rm-form" style="margin-top: 18px;">
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Enforce MFA for internal users</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" checked />
+                <span>Auto-logout after 30 minutes of inactivity</span>
+              </label>
+              <label class="rm-checkbox">
+                <input type="checkbox" />
+                <span>Restrict access by IP</span>
+              </label>
+              <div class="rm-form-row">
+                <input class="rm-input" type="password" placeholder="Update master password" />
+                <input class="rm-input" type="password" placeholder="Confirm password" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+  </body>
+</html>
+
+
